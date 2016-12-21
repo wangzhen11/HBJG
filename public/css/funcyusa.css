@@ -1,0 +1,593 @@
+@charset "utf-8";
+/*功能页*/
+/*导航*/
+.header {
+  width: 100%;
+  border-bottom: 2px #d7d9ff solid;
+}
+.header .content {
+  padding: 10px 60px 15px;
+}
+.header .content .smLogo {
+  float: left;
+}
+.header .content nav.smNav {
+  float: right;
+}
+.header .content nav.smNav .svg-wrapper {
+  position: relative;
+  width: 80px;
+  height: 36px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  margin: 20px 5px 0;
+  font-size: 14px;
+}
+.header .content nav.smNav .svg-wrapper #shape {
+  stroke-width: 3px;
+  fill: transparent;
+  stroke: #076ce0;
+  stroke-dasharray: 60 300;
+  stroke-dashoffset: -125;
+  transition: 0.5s all ease-in-out;
+}
+.header .content nav.smNav .svg-wrapper .text {
+  margin-top: -32px;
+}
+.header .content nav.smNav .svg-wrapper .text a {
+  font-weight: 100;
+}
+.header .content nav.smNav .svg-wrapper .text a.active {
+  color: #076ce0;
+  font-weight: 600;
+}
+.header .content nav.smNav .svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #a9b1d6;
+}
+/*底部版权及链接*/
+.footer {
+  text-align: center;
+  padding-top: 30px;
+  background: rgba(149, 151, 153, 0.06);
+}
+.footer .footerList {
+  margin-bottom: 20px;
+}
+.footer .footerList li {
+  display: inline;
+  font-size: 15px;
+  padding: 0 22px;
+}
+.footer .footerList li:hover {
+  color: #161ce1;
+}
+.footer .copyRight {
+  padding: 22px 0;
+  font-size: 14px;
+  border-top: 1px solid #b4baff;
+}
+.footer .copyRight span {
+  padding-left: 40px;
+}
+/**
+ *联系我们
+ */
+/*banner图*/
+.conBanner {
+  width: 100%;
+  height: 380px;
+  margin-bottom: 38px;
+  background: url("../images/banner_12.jpg") no-repeat center;
+  background-size: cover;
+}
+.conBanner p {
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 140px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+.conBanner p span {
+  display: block;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 500;
+}
+/*联系方式*/
+.Zcontact {
+  text-align: center;
+  margin: 0 auto 50px;
+}
+.Zcontact h2 {
+  font-size: 48px;
+}
+.Zcontact h2 span {
+  color: #3D9EE9;
+}
+.Zcontact h3 {
+  line-height: 82px;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.Zcontact .conMethod {
+  float: left;
+  width: 25%;
+  padding: 0 16px;
+}
+.Zcontact .conMethod img {
+  margin: 20px 0 30px;
+  width: 58px;
+  height: 50px;
+}
+.Zcontact .conMethod span {
+  display: block;
+  font-size: 14px;
+  line-height: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #d7d9ff;
+}
+.Zcontact .conMethod p {
+  font-size: 16px;
+  font-weight: 600;
+}
+/*地图*/
+#contactMap {
+  width: 45%;
+  float: right;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-right: 3%;
+  opacity: .85;
+}
+/*留言跳转*/
+.conNess {
+  width: 40%;
+  float: left;
+  padding-left: 4%;
+}
+.conNess h3 {
+  font-size: 34px;
+  line-height: 80px;
+}
+.conNess p {
+  font-size: 15px;
+  text-indent: 2em;
+  line-height: 36px;
+}
+.conNess a {
+  position: relative;
+  z-index: 9;
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  float: right;
+  margin: 20px 18px 0 0;
+  line-height: 40px;
+  text-align: center;
+  font-size: 16px;
+}
+.conNess a:hover {
+  color: #000;
+}
+.conNess a:hover::before {
+  opacity: 0;
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.conNess a:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.conNess a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #709eff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.conNess a::after {
+  content: '';
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  opacity: 0;
+  background-color: rgba(125, 122, 135, 0.37);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/**
+ *在线留言
+ */
+/*banner*/
+.mesBanner {
+  width: 100%;
+  height: 380px;
+  margin-bottom: 24px;
+  background: url("../images/banner_13.jpg") no-repeat center;
+  background-size: cover;
+}
+/*留言板*/
+.message {
+  width: 100%;
+  font-size: 15px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.message h3 {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 30px 0;
+  text-indent: .7em;
+  color: #4a7ae9;
+}
+.message input,
+.message textarea {
+  font-size: 13px;
+  border: 1px solid #acb5ff;
+  text-indent: 0.5em;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+.message label {
+  cursor: pointer;
+}
+.message #nameC,
+.message #mailC,
+.message #telC,
+.message #codeC {
+  display: inline-block;
+  line-height: 30px;
+  font-size: 12px;
+  color: red;
+  vertical-align: bottom;
+}
+.message .meName,
+.message .meMail,
+.message .meNum {
+  float: left;
+  width: 33%;
+  margin-bottom: 30px;
+}
+.message .meName #mName,
+.message .meMail #mName,
+.message .meNum #mName,
+.message .meName #mMail,
+.message .meMail #mMail,
+.message .meNum #mMail,
+.message .meName #mNum,
+.message .meMail #mNum,
+.message .meNum #mNum {
+  width: 200px;
+  height: 30px;
+}
+.message .meArea {
+  position: relative;
+  clear: both;
+  height: 100px;
+  margin-bottom: 30px;
+}
+.message .meArea #mArea {
+  width: 81.5%;
+  height: 100px;
+}
+.message .meArea .wordN {
+  position: absolute;
+  right: 13%;
+  bottom: 0;
+  font-size: 12px;
+}
+.message .meArea .wordN #readyN {
+  color: #0f67ff;
+}
+.message .meArea .wordN #leftN {
+  color: #EE5522;
+}
+.message .meCheck label,
+.message .meCheck #codeC,
+.message .meCheck #seccode,
+.message .meCheck #mCheck {
+  float: left;
+}
+.message .meCheck label {
+  line-height: 30px;
+}
+.message .meCheck #mCheck {
+  width: 150px;
+  height: 30px;
+}
+.message .meCheck #seccode {
+  display: block;
+  margin-left: 15px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  color: #3A3E41;
+  letter-spacing: 3px;
+  font-size: 15px;
+  text-align: center;
+  background: #8ecbbc;
+  user-select: none;
+}
+.message .meCheck #changeA {
+  line-height: 30px;
+  font-size: 13px;
+  padding-left: 5px;
+}
+.message .meCheck #changeA:hover {
+  color: #3D9EE9;
+}
+.message #mSub {
+  clear: both;
+  display: block;
+  width: 160px;
+  height: 46px;
+  margin: 30px 0 0 63px;
+  font-size: 16px;
+  text-indent: 0;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: 1px #3D9EE9 solid;
+  border-radius: 5px;
+  background: #3D9EE9;
+  cursor: pointer;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.message #mSub:hover {
+  box-shadow: 0 2px 3px #7b8189;
+  transform: translateY(-1px);
+}
+.message .othmess {
+  padding: 50px 0 10px 0;
+  border-bottom: 1px solid #d7d9ff;
+}
+.message .messShow {
+  padding: 26px 0 40px;
+  width: 100%;
+}
+.message .messShow .messageList {
+  margin: 20px 0;
+}
+.message .messShow .messageList .meShowL {
+  text-align: center;
+  width: 15%;
+  float: left;
+  height: 130px;
+  padding-top: 30px;
+}
+.message .messShow .messageList .meShowL img {
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+.message .messShow .messageList .meShowR {
+  width: 85%;
+  float: right;
+}
+.message .messShow .messageList .meShowR .mShowH {
+  width: 94%;
+  line-height: 30px;
+}
+.message .messShow .messageList .meShowR .mShowH .nameShow {
+  font-weight: 600;
+  float: left;
+  text-indent: 1em;
+}
+.message .messShow .messageList .meShowR .mShowH .dateShow {
+  float: right;
+  font-size: 13px;
+}
+.message .messShow .messageList .meShowR .mShowB {
+  position: relative;
+  width: 96%;
+  height: 100px;
+  border: 1px solid #c8bbff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #b7b4ff;
+}
+.message .messShow .messageList .meShowR .mShowB .conShow {
+  line-height: 38px;
+  text-indent: 1em;
+}
+.message .messShow .messageList .meShowR .mShowB .mDel {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 5px;
+  color: #959799;
+}
+.message .messShow .messageList .meShowR .mShowB .mmDel {
+  position: absolute;
+  z-index: 99;
+  right: 3px;
+  bottom: 30px;
+  display: none;
+  width: 80px;
+  height: 36px;
+  background-color: #3D9EE9;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #3D9EE9;
+  border-radius: 10px;
+  line-height: 36px;
+}
+.message .messShow .messageList .meShowR .mShowB .mmDel::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 9px solid transparent;
+  border-top-color: #3D9EE9;
+  top: 100%;
+  left: 50%;
+  margin-left: 15px;
+}
+.message .messShow .messageList .meShowR .mShowB .mmDel li {
+  display: inline-block;
+  cursor: pointer;
+}
+.message .messShow .messageList .meShowR .mShowB .mmDel li.mSure {
+  color: #e7e7ee;
+}
+/**
+ *登录界面
+ */
+/*banner*/
+.regBanner {
+  position: relative;
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+  background: url("../images/reg.jpg") no-repeat center;
+  background-size: cover;
+}
+.regBanner .register {
+  width: 380px;
+  margin: 50px auto;
+  box-shadow: 0 1px 5px  #000;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  border-radius: 6px;
+}
+.regBanner .register .userType {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 16px;
+  font-size: 0;
+}
+.regBanner .register .userType .user {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all .5s;
+  border-radius: 6px;
+}
+.regBanner .register .userType .uActive {
+  background-color: #0f67ff;
+}
+.regBanner .register .login {
+  margin: 0 25px;
+  height: 245px;
+}
+.regBanner .register .login .forgrt {
+  float: right;
+  padding-right: 14px;
+}
+.regBanner .register .login .forgrt:hover {
+  color: #0f67ff;
+  cursor: pointer;
+}
+.regBanner .register .login .ifadr {
+  display: block;
+  float: right;
+  line-height: 34px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.regBanner .register .login .accountN,
+.regBanner .register .login .accountS,
+.regBanner .register .login .passwordN,
+.regBanner .register .login .passwordS,
+.regBanner .register .login .passwordSu {
+  height: 34px;
+  margin: 12px 0;
+}
+.regBanner .register .login #reForm #reMail,
+.regBanner .register .login #loForm #reMail,
+.regBanner .register .login #reForm #rePass,
+.regBanner .register .login #loForm #rePass,
+.regBanner .register .login #reForm #reSub,
+.regBanner .register .login #loForm #reSub,
+.regBanner .register .login #reForm #loMail,
+.regBanner .register .login #loForm #loMail,
+.regBanner .register .login #reForm #loPass,
+.regBanner .register .login #loForm #loPass,
+.regBanner .register .login #reForm #passSu,
+.regBanner .register .login #loForm #passSu,
+.regBanner .register .login #reForm #suSub,
+.regBanner .register .login #loForm #suSub {
+  width: 315px;
+  height: 34px;
+  line-height: 34px;
+  text-indent: .6em;
+  display: block;
+  float: left;
+  border-radius: 6px;
+  border: 1px solid #6892B1;
+  background-color: rgba(255, 248, 253, 0.86);
+}
+.regBanner .register .login #reForm #reCheck,
+.regBanner .register .login #loForm #reCheck,
+.regBanner .register .login #reForm #usePass,
+.regBanner .register .login #loForm #usePass,
+.regBanner .register .login #reForm #passNor,
+.regBanner .register .login #loForm #passNor {
+  margin-left: 2px;
+  padding: 10px;
+  background-color: #fff;
+  vertical-align: middle;
+  border: none!important;
+}
+.regBanner .register .login #reForm #reSub,
+.regBanner .register .login #loForm #reSub,
+.regBanner .register .login #reForm #suSub,
+.regBanner .register .login #loForm #suSub {
+  background-color: #0f67ff;
+  color: #fff;
+  font-size: 16px;
+  margin: 12px 0;
+  text-align: center;
+  letter-spacing: 15px;
+  font-weight: bold;
+  border: none!important;
+  cursor: pointer;
+}
+.regBanner .register .login #reForm #getSmsCode,
+.regBanner .register .login #loForm #getSmsCode {
+  display: inline-block;
+  width: 120px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #6892B1;
+  background-color: rgba(255, 248, 253, 0.86);
+  vertical-align: top;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 15px 0 5px;
+}
+.regBanner .register .login #reForm #passSu,
+.regBanner .register .login #loForm #passSu {
+  display: inline-block;
+  width: 190px;
+  margin-top: 0;
+}
+.regBanner .register .superLogin {
+  display: none;
+}
