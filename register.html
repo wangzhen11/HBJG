@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="工业、民用、公共等各类工程建筑，水处理，水泥厂，冶炼、焦化，绿色节能建筑，房屋建筑工程总承包特级企业" />
+    <meta name="description" content="河北建工集团有限责任公司，省级国有资产授权经营机构，具有房屋建筑及设计、房地产开发、设备安装、装饰装修、项目投资、物流、对外工程承包、对外经济技术合作、进出口贸易等综合实力的国有大型建筑业企业集团"/>
+    <title>河北建工集团—登录</title>
+    <link rel="shortcut icon" href="public/images/title_icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="public/css/sweetalert.css">
+    <script>
+        var checkMobile = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            var brower = {};
+            if (ua.match(/iphone|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|mobile/i)) {
+                brower.mobile = true;//判断是否是手机访问
+            }
+            if (ua.match(/MicroMessenger/i)) {
+                brower.weinxin = true;	//判断是不是微信
+            }
+            if (ua.match(/iphone|ipad/i)) {
+                brower.ios = true;  //判断是不是ios系统
+            }
+            if (ua.match(/android/i)) {
+                brower.android = true;  //判断是不是安卓系统
+            }
+            if (ua.match(/Windows Phone/i)) {
+                brower.wp = true;  //判断是不是windows系统
+            }
+            return brower;
+        };
+        if(!!checkMobile().mobile){
+            window.location.href = "mobile/index_m.html";
+        }
+    </script>
+    <!--[if lte IE 9]>
+    <script>window.location.href='upgrade-your-browser.html';</script>
+    <![endif]-->
+    <script src="public/js/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/css/funcyusa.css">
+</head>
+<body>
+<!--导航-->
+<div class="header">
+    <div class="content">
+        <h1 class="smLogo"><img src="public/images/loginlogo.png"></h1>
+        <nav class="smNav">
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="register.html" target="_blank" class="active">企业邮箱</a>
+                </div>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="contact.html" target="_blank">联系我们</a>
+                </div>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="message.html" target="_blank">在线留言</a>
+                </div>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="index.html" target="_blank">返回首页</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--登陆-->
+<div class="container">
+    <section class="regBanner">
+        <div class="content">
+            <!--登录框-->
+            <div class="register">
+                <div class="userType">
+                    <span class="user uActive">用户登录</span>
+                    <span class="user">管理员登录</span>
+                </div>
+                <div class="nomalLogin login">
+                    <form id="reForm">
+                        <span>注：仅限集团内部职工</span>
+                        <div class="accountN">
+                            <label for="reMail" class="ifadr" id="mailLabel">*</label>
+                            <input type="text" id="reMail" placeholder="邮箱帐号">
+                        </div>
+                        <div class="passwordN">
+                            <label for="rePass" class="ifadr" id="passLabelN">*</label>
+                            <input type="password" id="rePass" placeholder="密码">
+                        </div>
+                        <input type="checkbox" id="reCheck">
+                        <label for="reCheck">SSL 安全登录</label>
+                        <span class="forgrt">忘记用户密码？</span>
+                        <input type="submit" id="reSub" value="登录">
+                    </form>
+                </div>
+                <div class="superLogin login">
+                    <form id="loForm">
+                        <input type="radio" id="suCheck" name="user" checked>
+                        <label for="suCheck">超级域管理员</label>
+                        <input type="radio" id="norCheck" name="user">
+                        <label for="norCheck">域管理员</label>
+                        <div class="accountS">
+                            <label for="loMail" class="ifadr" id="mailLabelS">*</label>
+                            <input type="text" id="loMail" placeholder="管理员帐号">
+                        </div>
+                        <div class="passwordS">
+                            <label for="loPass" class="ifadr" id="passLabelS">*</label>
+                            <input type="password" id="loPass" placeholder="密码">
+                        </div>
+                        <div class="passwordSu clearFloat">
+                            <input type="text" id="passSu" placeholder="密保">
+                            <span id="getSmsCode" class="ifadr">获取密保令</span>
+                            <label for="passSu"></label>
+                        </div>
+                        <input type="checkbox" id="usePass" checked>
+                        <label for="usePass">使用密保登录</label>
+                        <input type="checkbox" id="passNor">
+                        <label for="passNor">SSL 安全登录</label>
+                        <span class="forgrt">忘记管理员密码？</span>
+                        <input type="submit" id="suSub" value="登录">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="content">
+        <ul class="footerList clearFloat">
+            <li><a href="case.html" target="_blank">工程案例</a></li>
+            <li><a href="product.html" target="_blank">建筑产品</a></li>
+            <li><a href="culture.html" target="_blank">企业文化</a></li>
+            <li><a href="abroad.html" target="_blank">海外事业</a></li>
+            <li><a href="news.html" target="_blank">新闻动态</a></li>
+            <li><a href="about.html" target="_blank">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="copyRight">
+        <p>版权所有 © 河北建工集团责任有限公司 <span>冀ICP备11006476号</span></p>
+    </div>
+</div>
+<script src="public/js/sweetalert.min.js"></script>
+<script src="public/js/jquery-1.11.3.min.js"></script>
+<script src="public/js/funcyusa.js"></script>
+</body>
+</html>

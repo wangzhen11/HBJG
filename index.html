@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="工业、民用、公共等各类工程建筑，水处理，水泥厂，冶炼、焦化，绿色节能建筑，房屋建筑工程总承包特级企业" />
+    <meta name="description" content="河北建工集团有限责任公司，省级国有资产授权经营机构，具有房屋建筑及设计、房地产开发、设备安装、装饰装修、项目投资、物流、对外工程承包、对外经济技术合作、进出口贸易等综合实力的国有大型建筑业企业集团"/>
+    <title>河北建工集团—首页</title>
+    <link rel="shortcut icon" href="public/images/title_icon.png" type="image/x-icon"/>
+    <script>
+        var checkMobile = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            var brower = {};
+            if (ua.match(/iphone|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|mobile/i)) {
+                brower.mobile = true;//判断是否是手机访问
+            }
+            if (ua.match(/MicroMessenger/i)) {
+                brower.weinxin = true;	//判断是不是微信
+            }
+            if (ua.match(/iphone|ipad/i)) {
+                brower.ios = true;  //判断是不是ios系统
+            }
+            if (ua.match(/android/i)) {
+                brower.android = true;  //判断是不是安卓系统
+            }
+            if (ua.match(/Windows Phone/i)) {
+                brower.wp = true;  //判断是不是windows系统
+            }
+            return brower;
+        };
+        if(!!checkMobile().mobile){
+            window.location.href = "mobile/index_m.html";
+        }
+    </script>
+    <!--[if lte IE 9]>
+    <script>window.location.href='upgrade-your-browser.html';</script>
+    <![endif]-->
+    <script src="public/js/html5shiv.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=FHqMKWt5ED0jDNYNSiAv6Hb2XzUduEDF"></script>
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/css/index.css">
+</head>
+<body>
+<!--头部导航开始-->
+    <header class="iHeader">
+        <div class="navLittle">
+            <!--logo部分-->
+            <h1 class="logo"><a href="index.html"></a></h1>
+            <!--右边搜索及登录-->
+            <div class="navRight">
+                <ul class="clearFloat">
+                    <li><a href="register.html" target="_blank" class="active">企业邮箱</a></li>
+                    <li><a href="message.html" target="_blank">在线留言</a></li>
+                    <li><a href="contact.html" target="_blank">联系我们</a></li>
+                    <span id="navSlip_1"></span>
+                </ul>
+                <div class="navSearch">
+                    <label for="indexSh"></label>
+                    <input type="text" id="indexSh" value="全站搜索" placeholder="全站搜索">
+                </div>
+            </div>
+        </div>
+        <nav>
+            <!--导航开始-->
+            <div class="navBig">
+                <ul class="navList clearFloat">
+                    <li><a href="index.html" class="active">首 页</a></li>
+                    <li><a href="case.html" target="_blank">工程案例</a></li>
+                    <li><a href="product.html" target="_blank">建筑产品</a></li>
+                    <li><a href="culture.html" target="_blank">企业文化</a></li>
+                    <li><a href="abroad.html" target="_blank">海外事业</a></li>
+                    <li><a href="news.html" target="_blank">新闻动态</a></li>
+                    <li><a href="about.html" target="_blank">关于我们</a></li>
+                    <span id="navSlip"></span><!--滑块-->
+                </ul>
+            </div>
+            <!--导航结束-->
+        </nav>
+    </header>
+<!--头部导航结束-->
+<!--焦点图开始-->
+    <section class="iFocus">
+        <div class="focusPic">
+            <!--图片-->
+            <ul id="wrapFocus">
+                <li>
+                    <img src="public/images/banner_2.jpg">
+                    <div class="bannerIndex animateText">
+                        <span class="zh_cn">立足河北，依托京津，面向全国，走向世界</span>
+                        <span class="english">BASED ON THE HEBEI ,RELYING ON BEIJING JIN ,FACING THE WHOLE COUNTRY ,IN THE WORLD</span>
+                        <span class="kouhao">以管理出效益，以创新促发展</span>
+                        <span class="contact">联系我们</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="public/images/banner_3.jpg">
+                    <p class="bannerText">
+                        <span class="zh_cn">不断追求创新，品质源于专业</span>
+                        <span class="english">CONSTANT PURSUIT OF INNOVATION，QUALITY FROM THE PROFESSIONAL</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="public/images/banner_4.jpg">
+                    <p class="bannerText">
+                        <span class="zh_cn">树良好形象，创精品工程</span>
+                        <span class="english">QUALITY PRODUCTS TO PURSUE EXCELLENCE</span>
+                    </p>
+                </li>
+                <li>
+                    <img src="public/images/banner_5.jpg">
+                    <p class="bannerText">
+                        <span class="zh_cn">对工程负责，让用户满意</span>
+                        <span class="english">THE PROJECT IS RESPONSIBLE FOR CUSTOMER SATISFACTION</span>
+                    </p>
+                </li>
+            </ul>
+            <!--圆点按钮-->
+            <ul id="wrapBtn">
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+                <li><a href="javascript:;"></a></li>
+            </ul>
+            <!--上一页-->
+            <div id="wrapPre"></div>
+            <!--下一页-->
+            <div id="wrapNext"></div>
+        </div>
+    </section>
+<!--焦点图结束-->
+<!--开始正文-->
+    <div class="container">
+        <!--集团优势介绍-->
+        <div class="content">
+            <!--标题-->
+            <div class="iTitle animateY animationS">
+                <h2><span>专业决定专注，</span>服务成就未来</h2>
+            </div>
+            <section class="contentM clearFloat">
+                <!--配图-->
+                <div class="Mleft animationS animateScaleB"></div>
+                <!--优势介绍4个-->
+                <div class="Mright">
+                    <div class="lump clearFloat animateY animationS">
+                        <div class="lumpLf"><span>01</span></div>
+                        <div class="lumpRg">
+                            <h4>60年品牌资质，经验的沉淀</h4>
+                            <p>以精品服务赢取后勤社会化无限商机以服务创新,<br>开启现代建筑业崭新模式。</p>
+                        </div>
+                    </div>
+                    <div class="lump clearFloat animateY animationS">
+                        <div class="lumpLf"><span>02</span></div>
+                        <div class="lumpRg">
+                            <h4>全国35家分（子）公司，您的放心之选 </h4>
+                            <p>本公司拥有多支特种专业施工队伍，在结合多年的大工程,<br>秉承专业的精神，一流的服务。</p>
+                        </div>
+                    </div>
+                    <div class="lump clearFloat animateY animationS">
+                        <div class="lumpLf"><span>03</span></div>
+                        <div class="lumpRg">
+                            <h4>行业尖锐施工队，现代化设计理念 </h4>
+                            <p>团结勤奋、诚信感恩、务实奉献、开拓创新,<br>以诚信赢取客户，以精品树品牌，以管理出效益，以创新促发展。</p>
+                        </div>
+                    </div>
+                    <div class="lump clearFloat animateY animationS">
+                        <div class="lumpLf"><span>04</span></div>
+                        <div class="lumpRg">
+                            <h4>贴心服务支持，让您无后顾之忧 </h4>
+                            <p>公司成立以来，以“优质、高效、团结、奉献”的企业精神，<br>解决了一项又一项技术难题，是国内一家真正有实力的施工单位。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--集团优秀工程3个-->
+        <div class="iProject">
+            <div class="content clearFloat">
+                <div class="iPshow">
+                    <!--图-->
+                    <div class="showImg animateYc animationS">
+                        <img src="public/images/pshow_1.jpg" title="河北太行国宾馆工程">
+                    </div>
+                    <!--文-->
+                    <div class="minute animateUpYa animationS">
+                        <h3>河北太行国宾馆工程</h3>
+                        <p>该项目位于石家庄市，新贵宾楼为在原一号楼基础上落地重建，设计建筑总面积达70000余平方米，功能完备、设施齐全、气势宏伟，尽显国宾馆风采。</p>
+                    </div>
+                </div>
+                <div class="iPshow">
+                    <!--图-->
+                    <div class="showImg animateYc animationS">
+                        <img src="public/images/pshow_2.jpg" title="海南三亚市鹿回头海景大道工程">
+                    </div>
+                    <!--文-->
+                    <div class="minute animateUpYa animationS">
+                        <h3>海南三亚市鹿回头海景大道工程</h3>
+                        <p>鹿回头海景大道沿着三亚湾畔至鹿回头区，全长约10公里；建设内容包括道路改扩建工程、道路照明工程、绿化工程、给排水工程、燃气工程等。</p>
+                    </div>
+                </div>
+                <div class="iPshow">
+                    <!--图-->
+                    <div class="showImg animateYc animationS">
+                        <img src="public/images/pshow_3.jpg" title="河北艺术中心工程">
+                    </div>
+                    <!--文-->
+                    <div class="minute animateUpYa animationS">
+                        <h3>河北艺术中心工程</h3>
+                        <p>河北省艺术中心整个工程占地44.62亩，总建筑面积32059平方米，总投资3.2亿人民币，是“九五”期间河北省重点建设项目。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--集团业务核心-->
+        <div class="content">
+            <!--标题-->
+            <div class="iTitle animationS animateY">
+                <h2><span>五大独特</span>核心业务</h2>
+            </div>
+            <section class="contentN clearFloat">
+                <!--业务展示5个-->
+                <div class="Nleft">
+                    <div class="listCore clearFloat animateY animationS">
+                        <div class="coreLeft"><span>A</span></div>
+                        <div class="coreRight">
+                            <h4>建筑业 </h4>
+                            <p>承担各类房屋建筑工程、化工石油工程、市政公用工程、冶炼工程、公路工程、港口与航道工程、铁路工程的施工总承包。</p>
+                        </div>
+                    </div>
+                    <div class="listCore clearFloat animateY animationS">
+                        <div class="coreLeft"><span>B</span></div>
+                        <div class="coreRight">
+                            <h4>房地产业 </h4>
+                            <p>房地产开发、销售，工程项目管理；可承揽安全技术防范壹级系统（工程）的设计、施工。</p>
+                        </div>
+                    </div>
+                    <div class="listCore clearFloat animateY animationS">
+                        <div class="coreLeft"><span>C</span></div>
+                        <div class="coreRight">
+                            <h4>物流业 </h4>
+                            <p>货运信息咨询，各类建材的销售，经济信息咨询，自营和代理各类商品和技术的进出口业务。</p>
+                        </div>
+                    </div>
+                    <div class="listCore clearFloat animateY animationS">
+                        <div class="coreLeft"><span>D</span></div>
+                        <div class="coreRight">
+                            <h4>投资业</h4>
+                            <p>对基础设施建设、房地产、商贸业、制造业、采矿业投资及管理，企业管理咨询服务。</p>
+                        </div>
+                    </div>
+                    <div class="listCore clearFloat animateY animationS">
+                        <div class="coreLeft"><span>E</span></div>
+                        <div class="coreRight">
+                            <h4>对外工程承包及进出口贸易 </h4>
+                            <p>自营和代理各类商品及技术的进出口业务，经营进料加工和“三来一补”业务，承办中外合资经营、合作生产业务。</p>
+                        </div>
+                    </div>
+                </div>
+                <!--配图-->
+                <div class="Nright animationS animateScaleB"></div>
+            </section>
+        </div>
+        <!--集团施工质量保证-->
+        <div class="iBest">
+            <!--标题-->
+            <div class="iTitle animateY animationS">
+                <h2><span>业内翘首，</span>精益求精</h2>
+            </div>
+            <div class="content">
+                <!--最优秀的5个列举-->
+                <div class="bestList clearFloat animateY animationS">
+                    <div class="list_1">
+                        <a href="javascript:;" class="animationS animateScale"></a>
+                        <span>工厂厂房</span>
+                    </div>
+                    <div class="list_2">
+                        <a href="javascript:;" class="animationS animateScale"></a>
+                        <span>公共市政</span>
+                    </div>
+                    <div class="list_3">
+                        <a href="javascript:;" class="animationS animateScale"></a>
+                        <span>熟练的工人</span>
+                    </div>
+                    <div class="list_4">
+                        <a href="javascript:;" class="animationS animateScale"></a>
+                        <span>现代的设计</span>
+                    </div>
+                    <div class="list_5">
+                        <a href="javascript:;" class="animationS animateScale"></a>
+                        <span>防患于未然</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--集团理念方针-->
+        <div class="content">
+            <!--标题-->
+            <div class="iTitle animateY animationS">
+                <h2><span>理念与</span>方针</h2>
+            </div>
+            <div class="contentT clearFloat">
+                <!--配图-->
+                <div class="tcLeft animationS animateScaleB"></div>
+                <!--理念、方针-->
+                <div class="tcRight">
+                    <div class="tMethod animateY animationS">
+                        <h3><img src="public/images/title_bg_3.png" alt="企业精神"></h3>
+                        <div class="mText">
+                            <h4>企业精神</h4>
+                            <p>用户至上 竭诚服务<br>优质高效 团结奉献</p>
+                        </div>
+                    </div>
+                    <div class="tMethod animateY animationS">
+                        <h3><img src="public/images/title_bg_1.png" alt="经营方针"></h3>
+                        <div class="mText">
+                            <h4>经营方针</h4>
+                            <p>立足河北 依托京津<br>面向全国 走向世界</p>
+                        </div>
+                    </div>
+                    <div class="tMethod animateY animationS">
+                        <h3><img src="public/images/title_bg_2.png" alt="质量方针"></h3>
+                        <div class="mText">
+                            <h4>质量方针</h4>
+                            <p>树精品意识 创优质工程<br>为用户服务 走质量兴企之路</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--集团部分子公司图介-->
+        <div class="iChild">
+            <!--标题-->
+            <div class="iTitle animateY animationS">
+                <h2><span>集团</span>子公司</h2>
+            </div>
+            <div class="content">
+                <!--子公司图介分左中右布局-->
+                <div class="childLeft ">
+                    <div class="childOne animationS animateScale">
+                        <img src="public/images/heyjy.jpg">
+                        <span class="childName">
+                            <em>河北建工集团建筑设计研究院</em>
+                        </span>
+                    </div>
+                    <div class="childOne animationS animateScale">
+                        <img src="public/images/hbzs.jpg">
+                        <span class="childName">
+                            <em>河北建工集团装饰公司</em>
+                        </span>
+                    </div>
+                </div>
+                <div class="childMiddle ">
+                    <section class="before clearFloat">
+                        <div class="childOne animationS animateScale">
+                            <img src="public/images/hb4j.jpg">
+                            <span class="childName">
+                                <em>河北省第四建筑工程公司</em>
+                            </span>
+                        </div>
+                        <div class="childOne animationS animateScale">
+                            <img src="public/images/hbe2j.jpg">
+                            <span class="childName">
+                                <em>河北省第二建筑工程公司</em>
+                            </span>
+                        </div>
+                        <div class="childOne animationS animateScale">
+                            <img src="public/images/hbfdc.jpg">
+                            <span class="childName">
+                                <em>河北省安装工程公司</em>
+                            </span>
+                        </div>
+                    </section>
+                    <section class="after">
+                        <div class="childOne animationS animateScale">
+                            <img src="public/images/hbzf.jpg">
+                            <span class="childName">
+                                <em>河北中纺设计有限公司</em>
+                            </span>
+                        </div>
+                        <div class="childOne animationS animateScale">
+                            <img src="public/images/hbgjg.jpg">
+                            <span class="childName">
+                                <em>河北建工集团钢结构有限公司</em>
+                            </span>
+                        </div>
+                    </section>
+                </div>
+                <div class="childRight">
+                    <div class="childOne animationS animateScale">
+                        <img src="public/images/hbwl.jpg">
+                        <span class="childName">
+                            <em>河北建工物流有限公司</em>
+                        </span>
+                    </div>
+                    <div class="childOne animationS animateScale">
+                        <img src="public/images/hbaz.jpg">
+                        <span class="childName">
+                            <em>河北建工集团房地产开发公司</em>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--集团内部部分新闻及新闻页入口-->
+        <div class="content">
+            <!--标题-->
+            <div class="iTitle animateY animationS">
+                <h2><span>我们的</span>新闻中心</h2>
+            </div>
+            <div class="contentW clearFloat animateY animationS">
+                <!--部分新闻展示-->
+                <div class="iNews">
+                    <h4><a href="javascript:;">集团第12次入选“中国承包商80强”</a></h4>
+                    <p>由美国《工程新闻记录》（ENR）和中国《建筑时报》两家权威媒体共同主办的年度 “中国承包商80强”排名于11月24日正式发榜，集团第12次入选。名列第26位。该榜单以... ...</p>
+                </div>
+                <div class="iNews">
+                    <h4><a href="javascript:;">集团装饰公司再获一项新型专利</a></h4>
+                    <p>日前，河北建工集团装饰公司“吊杆安装工具”技术获得国家知识产权局专利授权，截止目前公司已取得国家实用型专利授权29项，还有多项正在申请中。这些专利成果... ...</p>
+                </div>
+                <div class="iNews">
+                    <h4><a href="javascript:;">集团获中国建筑业多项荣誉</a></h4>
+                    <p>近日，中国建筑业协会网站公布了2015年度中国建筑业双200强企业、2016年度全国建筑业AAA级信用企业和全国建筑业先进企业名单，集团公司成功入选。集团公司、省二建公司... ...</p>
+                </div>
+            </div>
+            <div class="moreNews animationS animateXl">
+                <a href="news.html" target="_blank">查看更多>></a>
+            </div>
+        </div>
+    </div>
+<!--正文结束-->
+<!--尾部开始-->
+    <footer class="iFooter">
+        <!--集团详情-->
+        <div class="content">
+            <div class="fContact clearFloat animationS animateY">
+                <!--联系方式-->
+                <div class="fLeft">
+                    <h4><a href="javascript:;">联系我们</a></h4>
+                    <span><em>电话：</em>0311 - 87044368</span>
+                    <span><em>传真：</em>0311 - 87083642</span>
+                    <span><em>邮箱：</em>jgjt@hbjgjt.cn</span>
+                    <span><em>邮编：</em>050051</span>
+                </div>
+                <!--联系地址-->
+                <div class="fMiddle">
+                    <h4><a href="javascript:;">集团信息</a></h4>
+                    <span><img src="public/images/loginlogo.png"></span>
+                    <span><em>地址：</em>石家庄市友谊北大街146号</span>
+                </div>
+                <!--地图坐标-->
+                <div class="fRight">
+                    <div id="connect-map"></div>
+                    <script src="public/js/map.js"></script>
+                </div>
+            </div>
+        </div>
+        <!--版权-->
+        <div class="copyRight">
+            <p class="bCopy">版权所有 © 河北建工集团责任有限公司 <span>冀ICP备11006476号</span></p>
+        </div>
+        <!--回到顶部-->
+        <div id="goTop"></div>
+    </footer>
+<!--尾部结束-->
+<script src="public/js/jquery-1.11.3.min.js"></script>
+<script src="public/js/index.js"></script>
+</body>
+</html>

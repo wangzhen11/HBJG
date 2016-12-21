@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="工业、民用、公共等各类工程建筑，水处理，水泥厂，冶炼、焦化，绿色节能建筑，房屋建筑工程总承包特级企业" />
+    <meta name="description" content="河北建工集团有限责任公司，省级国有资产授权经营机构，具有房屋建筑及设计、房地产开发、设备安装、装饰装修、项目投资、物流、对外工程承包、对外经济技术合作、进出口贸易等综合实力的国有大型建筑业企业集团"/>
+    <title>河北建工集团—在线留言</title>
+    <link rel="shortcut icon" href="public/images/title_icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="public/css/sweetalert.css">
+    <script>
+        var checkMobile = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            var brower = {};
+            if (ua.match(/iphone|nokia|sony|ericsson|mot|samsung|sgh|lg|philips|panasonic|alcatel|lenovo|cldc|midp|wap|mobile/i)) {
+                brower.mobile = true;//判断是否是手机访问
+            }
+            if (ua.match(/MicroMessenger/i)) {
+                brower.weinxin = true;	//判断是不是微信
+            }
+            if (ua.match(/iphone|ipad/i)) {
+                brower.ios = true;  //判断是不是ios系统
+            }
+            if (ua.match(/android/i)) {
+                brower.android = true;  //判断是不是安卓系统
+            }
+            if (ua.match(/Windows Phone/i)) {
+                brower.wp = true;  //判断是不是windows系统
+            }
+            return brower;
+        };
+        if(!!checkMobile().mobile){
+            window.location.href = "mobile/index_m.html";
+        }
+    </script>
+    <!--[if lte IE 9]>
+    <script>window.location.href='upgrade-your-browser.html';</script>
+    <![endif]-->
+    <script src="public/js/html5shiv.min.js"></script>
+    <link rel="stylesheet" href="public/css/common.css">
+    <link rel="stylesheet" href="public/css/funcyusa.css">
+</head>
+<body>
+<!--导航-->
+<div class="header">
+    <div class="content">
+        <h1 class="smLogo"><img src="public/images/loginlogo.png"></h1>
+        <nav class="smNav">
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="register.html" target="_blank">企业邮箱</a>
+                </div>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="contact.html" target="_blank">联系我们</a>
+                </div>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="message.html" target="_blank" class="active">在线留言</a>
+                </div>
+            </div>
+            <div class="svg-wrapper">
+                <svg height="36" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="shape" height="36" width="80"></rect>
+                </svg>
+                <div class="text">
+                    <a href="index.html" target="_blank">返回首页</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!--banner图-->
+<section class="mesBanner"></section>
+<!--留言板-->
+<div class="container">
+    <div class="content">
+        <div class="message">
+            <h3>发表您的留言：</h3>
+            <form id="mForm">
+                <div class="meName">
+                    <label for="mName">&nbsp;&nbsp; 姓名：</label>
+                    <input type="text" id="mName" name="myName">
+                    <span id="nameC">*</span>
+                </div>
+                <div class="meMail">
+                    <label for="mMail">邮箱：</label>
+                    <input type="text" id="mMail" name="myMail">
+                    <span id="mailC"></span>
+                </div>
+                <div class="meNum">
+                    <label for="mNum">电话：</label>
+                    <input type="tel" id="mNum" name="myTel">
+                    <span id="telC">*</span>
+                </div>
+                <div class="meArea">
+                    <label for="mArea">&nbsp;&nbsp; 内容：</label>
+                    <textarea id="mArea" placeholder="留言需审核后才会显示" required maxlength="200" name="myText"></textarea>
+                    <p class="wordN">已输入<span id="readyN">0</span>个字符，还可输入<span id="leftN">200</span>个字符。</p>
+                </div>
+                <div class="meCheck clearFloat">
+                    <label for="mCheck">&nbsp;验证码：</label>
+                    <input type="text" id="mCheck" placeholder="不区分大小写">
+                    <span id="codeC">*</span>
+                    <span id="seccode"></span>
+                    <a href="javascript:;" id="changeA">换一换</a>
+                </div>
+                <input type="submit" id="mSub" value="提交留言">
+            </form>
+            <h3 class="othmess">留言：</h3>
+            <div class="messShow">
+                <div class="messageList clearFloat">
+                    <div class="meShowL">
+                        <img src="public/images/headerDefeaut.jpg">
+                    </div>
+                    <div class="meShowR">
+                        <div class="mShowH clearFloat">
+                            <span class="nameShow">匿名</span>
+                            <span class="dateShow">2016/12/12 12:30:34</span>
+                        </div>
+                        <div class="mShowB">
+                            <p class="conShow">这个网站真不赖！</p>
+                            <span class="mDel">删除</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="footer">
+    <div class="content">
+        <ul class="footerList clearFloat">
+            <li><a href="case.html" target="_blank">工程案例</a></li>
+            <li><a href="product.html" target="_blank">建筑产品</a></li>
+            <li><a href="culture.html" target="_blank">企业文化</a></li>
+            <li><a href="abroad.html" target="_blank">海外事业</a></li>
+            <li><a href="news.html" target="_blank">新闻动态</a></li>
+            <li><a href="about.html" target="_blank">关于我们</a></li>
+        </ul>
+    </div>
+    <div class="copyRight">
+        <p>版权所有 © 河北建工集团责任有限公司 <span>冀ICP备11006476号</span></p>
+    </div>
+</div>
+<script src="public/js/sweetalert.min.js"></script>
+<script src="public/js/jquery-1.11.3.min.js"></script>
+<script src="public/js/funcyusa.js"></script>
+</body>
+</html>
